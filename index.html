@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu blog musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu blog musical</h1>
+        <p>Vou compartilhar conhecimentos sobre musica e produção.</p>
+    </header>
+
+    <main class="posts-grid">
+        <article class="card">
+            <div class="card-icon">
+                <img src="icone-post1.png" alt="Ícone do post 1">
+            </div>
+            <h2>Meu primeiro post</h2>
+            <p class="author">Por: Leonardo Labiak Pereira</p>
+            <p class="content">Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de teoria musical e curiosidades da área de música.</p>
+            <img src="musica.jpg" alt="Partitura musical" class="post-image">
+            <div class="reactions">
+                <button class="reaction-btn" onclick="curtir(this)">
+                    ❤️ <span class="count">0</span>
+                </button>
+                <button class="reaction-btn" onclick="curtir(this)">
+                    👍 <span class="count">0</span>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">
+                <img src="icone-post2.png" alt="Ícone do post 2">
+            </div>
+            <h2>A evolução das gravações áudio</h2>
+            <p class="author">Por: Leonardo Labiak Pereira</p>
+            <p class="content">Das antigas fita cassete ao áudio digital em alta resolução, a produção musical se transformou completamente com a tecnologia.</p>
+            <p class="source">Fonte: <a href="https://pt.wikipedia.org/wiki/Grava%C3%A7%C3%A3o_e_reprodu%C3%A7%C3%A3o_de_som" target="_blank">História do Som</a></p>
+            <div class="reactions">
+                <button class="reaction-btn" onclick="curtir(this)">
+                    ❤️ <span class="count">0</span>
+                </button>
+                <button class="reaction-btn" onclick="curtir(this)">
+                    👍 <span class="count">0</span>
+                </button>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-icon">
+                <img src="icone-post3.png" alt="Ícone do post 3">
+            </div>
+            <h2>Como funciona o sintetizador</h2>
+            <p class="author">Por: Leonardo Labiak Pereira</p>
+            <p class="content">Os sintetizadores revolucionaram a música moderna permitindo criar timbres totalmente novos por meio da manipulação de ondas sonoras.</p>
+            <p class="source">Fonte: <a href="https://pt.wikipedia.org/wiki/Sintetizador" target="_blank">Teoria Sintética</a></p>
+            <div class="reactions">
+                <button class="reaction-btn" onclick="curtir(this)">
+                    ❤️ <span class="count">0</span>
+                </button>
+                <button class="reaction-btn" onclick="curtir(this)">
+                    👍 <span class="count">0</span>
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <button id="dark-mode-btn" onclick="toggleDarkMode()" title="Alternar modo escuro">
+        🌓
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

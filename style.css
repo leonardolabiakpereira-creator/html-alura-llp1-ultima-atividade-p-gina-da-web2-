@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    color: #183C63;
+}
+
+header {
+    background-color: #183C63;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.posts-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px 20px;
+    flex: 1 1 300px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(24, 60, 99, 0.2);
+}
+
+.card-icon {
+    margin-bottom: 16px;
+}
+
+.card-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    color: #183C63;
+    margin: 0 0 10px 0;
+}
+
+.card .author {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #183C63;
+    margin: 0 0 12px 0;
+}
+
+.card .content {
+    font-size: 0.88rem;
+    color: #444444;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+    flex-grow: 1;
+}
+
+.card .source {
+    font-size: 0.8rem;
+    color: #666666;
+    margin: 0 0 16px 0;
+}
+
+.card .source a {
+    color: #183C63;
+    text-decoration: underline;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 10px 0 16px 0;
+}
+
+.reactions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.reaction-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.reaction-btn:hover {
+    background-color: #e9ecef;
+}
+
+
+#dark-mode-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #183C63;
+    color: #ffffff;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#dark-mode-btn:hover {
+    transform: scale(1.1);
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f2937;
+    border-bottom: 1px solid #374151;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.15);
+}
+
+body.dark-mode .card:hover {
+    box-shadow: 0 8px 28px rgba(56, 189, 248, 0.35);
+}
+
+body.dark-mode .card h2, 
+body.dark-mode .card .author {
+    color: #38bdf8;
+}
+
+body.dark-mode .card .content {
+    color: #b0b0b0;
+}
+
+body.dark-mode .card .source, 
+body.dark-mode .card .source a {
+    color: #9ca3af;
+}
+
+body.dark-mode .reaction-btn {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #e0e0e0;
+}
+
+body.dark-mode .reaction-btn:hover {
+    background-color: #3d3d3d;
+}
+
+body.dark-mode #dark-mode-btn {
+    background-color: #38bdf8;
+    color: #121212;
+}
